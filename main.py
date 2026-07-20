@@ -1,10 +1,25 @@
 from fastapi import FastAPI
 
-app=FastAPI()
+app = FastAPI(
+    title="Task API",
+    description="A simple CRUD API built using FastAPI",
+    version="1.0.0"
+)
+
+
 @app.get("/")
-def hello():
-    return {"message": "Hello, World!"
-            
-            }
+def root():
+    return {
+        "name": "Task API",
+        "version": "1.0",
+        "endpoints": [
+            "/tasks"
+        ]
+    }
 
 
+@app.get("/health")
+def health():
+    return {
+        "status": "ok"
+    }
