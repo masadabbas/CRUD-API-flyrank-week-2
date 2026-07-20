@@ -75,7 +75,7 @@ http://127.0.0.1:8000/docs
 ```
 ## Swagger Preview
 
-![Swagger UI](swagger-ui.png)
+![Swagger UI](swagger.png)
 ---
 
 ## Endpoints
